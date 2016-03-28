@@ -1,14 +1,22 @@
-# Joshua Li
-# A Python implementation and step-by-step demonstration of bubble sort, with runtime analysis.
+#!/usr/bin/python3
 
+# Author: Joshua Li
+# Description:
+# 	A Python implementation of bubble sort, complete with
+#	runtime analysis and step-by-step demonstration!
+
+'''
+Information:
+
+Bubble sort is O(n^2) time complexity and is an in-place sort, like selection sort.
+But, it can recognize and skip over sorted data! So for data that is already sorted,
+one O(N) pass is sufficient to verify that it is sorted already.
+
+It's a very well known quadratic sort, but its primary drawback is that swapping takes time
+(three re-assignments) and bubble sort is based on swapping.
+
+'''
 from sorttools import *
-
-# Bubble sort is O(n^2) time complexity and is an in-place sort, like selection sort.
-# But, it can recognize and skip over sorted data! So for data that is already sorted,
-# one O(N) pass is sufficient to verify that it is sorted already.
-
-# It's a very well known quadratic sort, but its primary drawback is that swapping takes time
-# (three re-assignments) and bubble sort is based on swapping.
 
 def bubble_sort(nums):
 	for i in range(len(nums)-1, 0, -1):
@@ -41,13 +49,13 @@ def _bubble_sort_with_step_analysis(nums):
 
 if __name__ == "__main__":
 	### Just the sort:
-	nums = generate_randoms()
-	print("Original: ", nums)
-	print("Sorted: ", bubble_sort(nums))
+	#nums = generate_randoms()
+	#print("Original: ", nums)
+	#print("Sorted: ", bubble_sort(nums))
 
 	### Step analysis:
-	#nums = generate_randoms()
-	#_bubble_sort_with_step_analysis(nums)
+	nums = generate_randoms()
+	_bubble_sort_with_step_analysis(nums)
 
 	### Runtime analysis:
 	#nums = generate_randoms(1000)

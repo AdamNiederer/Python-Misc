@@ -1,4 +1,9 @@
-# Just some helper functions here.
+#!/usr/bin/python3
+
+# Author: Joshua Li
+# Description:
+# 	Some helper functions for my sorting algorithm implementations.
+
 import random
 
 def generate_randoms(size=10):
@@ -10,5 +15,8 @@ def is_sorted(nums):
 		if nums[i] > nums[i+1]:
 			raise Exception("Found unsorted pair [{}, {}] that spans indices ({} - {})"
 				.format(nums[i], nums[i+1], i, i+1))
-			return False
+			return False # Not needed since an exception is thrown, so this is just here for completion.
 	return True
+
+if __name__ == "__main__":
+	print("Script executed.")

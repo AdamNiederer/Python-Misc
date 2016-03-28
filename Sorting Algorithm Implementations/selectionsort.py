@@ -1,11 +1,19 @@
-# Joshua Li
-# A Python implementation and step-by-step demonstration of selection sort, with runtime analysis.
+#!/usr/bin/python3
 
+# Author: Joshua Li
+# Description:
+# 	A Python implementation of selection sort, complete with
+#	runtime analysis and step-by-step demonstration!
+
+'''
+Information:
+
+Selection sort is O(n^2) time complexity and is an in-place sort.
+However, it cannot recognize already sorted data.
+It's probably the worst performing out of all the "quadratic" sorts.
+
+'''
 from sorttools import *
-
-# Selection sort is O(n^2) time complexity and is an in-place sort.
-# However, it cannot recognize already sorted data.
-# It's probably the worst performing out of all the "quadratic" sorts.
 
 def selection_sort(nums):
 	size = len(nums)
@@ -38,10 +46,10 @@ def _selection_sort_with_step_analysis(nums):
 				min_index = j
 		print("Found minimum ({}) at index {}".format(nums[min_index], min_index))
 		if min_index != i:
-			print("Swapping minimum with element at index ({})".format(i))
+			print("Swapping minimum with element at index {}".format(i))
 			nums[i], nums[min_index] = nums[min_index], nums[i]
 		else:
-			print("No need to swap, minimum is at beginning of sublist already.")
+			print(" * No need to swap, minimum is at beginning of sublist already.")
 		print("List is now: ", nums, '\n')
 	print("Sorted list: ", nums)
 
@@ -52,9 +60,9 @@ if __name__ == "__main__":
 	#print("Sorted: ", selection_sort(nums))
 
 	### Step analysis:
-	#nums = generate_randoms()
-	#_selection_sort_with_step_analysis(nums)
+	nums = generate_randoms()
+	_selection_sort_with_step_analysis(nums)
 
 	### Runtime analysis:
-	nums = generate_randoms(1000)
-	_selection_sort_with_runtime(nums)
+	#nums = generate_randoms(1000)
+	#_selection_sort_with_runtime(nums)
