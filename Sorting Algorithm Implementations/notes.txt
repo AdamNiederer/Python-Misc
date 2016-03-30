@@ -1,6 +1,0 @@
-These are common sorting algorithms implemented in Python.
-
-As such, I will not be using most of Python's built-in functionality.
-(No sorted(), no max(), no min(), etc.)
-
-Future TODO: I'm planning on adding runtime analysis via python's time library and matplotlib.
