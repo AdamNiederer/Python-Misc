@@ -1,5 +1,5 @@
-# Python-Doodles
-All of the other Python stuff that I write as I learn the language!
+# Python-Misc
+All my other Python stuff!
 
 ##### Maximum Contiguous Subarray Problem
 I was posed this problem as homework for my second semester CMPSC 111S seminar class.
