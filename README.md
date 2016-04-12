@@ -1,6 +1,11 @@
 # Python-Misc
 All my other Python stuff!
 
+##### Airplane Seating Problem
+This problem was brought up during a CMPSC 111S lecture, and I wanted
+to write a simulation to solve the problem. The problem description
+is in the script code as a multi-line comment.
+
 ##### Maximum Contiguous Subarray Problem
 I was posed this problem as homework for my second semester CMPSC 111S seminar class.
 Wanting to do better than an obvious O(N^2) brute force solution, I came up with my
