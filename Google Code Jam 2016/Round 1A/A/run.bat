@@ -1,0 +1,1 @@
+python A.py < problem_input.txt > problem_output.txt
