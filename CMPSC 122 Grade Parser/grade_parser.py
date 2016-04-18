@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 
-from collections import Counter
 from itertools import accumulate
 import matplotlib.pyplot as plt
 
